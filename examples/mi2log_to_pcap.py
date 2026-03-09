@@ -39,16 +39,16 @@ GSMTAP_VERSION = 0x02
 GSMTAP_HDR_LEN = 4          # in 32-bit words (= 16 bytes)
 GSMTAP_TYPE_LTE_RRC = 13
 
-# GSMTAP LTE RRC sub-types (channel mapping)
+# GSMTAP LTE RRC sub-types (channel mapping based on Wireshark packet-gsmtap.c)
 GSMTAP_LTE_RRC_SUB = {
-    "BCCH_BCH":    0,
-    "BCCH_DL_SCH": 1,
-    "MCCH":        2,
-    "PCCH":        3,
-    "DL_CCCH":     4,
-    "DL_DCCH":     5,
-    "UL_CCCH":     6,
-    "UL_DCCH":     7,
+    "DL_CCCH":     0,
+    "DL_DCCH":     1,
+    "UL_CCCH":     2,
+    "UL_DCCH":     3,
+    "BCCH_BCH":    4,
+    "BCCH_DL_SCH": 5,
+    "PCCH":        6,
+    "MCCH":        7,
 }
 
 # Map AWW proto IDs/names to GSMTAP sub-types
